@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', pagina.index),
     path('json/',pagina.json),
+    path('json/<int:cant>',pagina.json),
     path('webpage/', pagina.webpage),
     path('webpage2/', pagina.webpage2),
     path('modelo/', pagina.update),
